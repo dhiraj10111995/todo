@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo APP</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <div class="container container--with-border">
+        <div class="row">
+            <div class="col-sm-12 col-md-8 col-md-offset-2">
+
+                <section class="todo-app">
+
+                    <div class="panel panel-default add-todo-panel">
+                        <div class="panel-heading" style="background-color:orange">
+                            Simple Todo App
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="todo-input" placeholder="Add any item over here">
+                                </div>
+                                <div class="col-sm-2">
+                                    <button type="submit" class="btn btn-block btn-success" id="add-todo-btn" onclick="TodoView.addTodo()">
+                                    Add More
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="todo-list-root">
+                    </div>               
+       </div>
+ </div>
+    </div>
+    </div>
+
+    <script src="app/Todo.js"></script>
+    <script src="app/TodoView.js"></script>
+    <script src="app/TodoService.js"></script>
+    <script src="app/TodoRenderer.js"></script>
+
+</body>
+
+</html>
